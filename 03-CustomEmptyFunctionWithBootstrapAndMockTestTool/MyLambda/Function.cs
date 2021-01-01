@@ -14,7 +14,7 @@ namespace MyLambda
     public class Function
     {
         static int _main = 0;
-        static int _ctor = 0;
+        static  int _ctor = 0;
 
         /// <summary>
         /// The main entry point for the custom runtime.

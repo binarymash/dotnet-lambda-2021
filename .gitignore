@@ -360,3 +360,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+02-CustomEmptyFunction/MyLambda.zip
+03-CustomEmptyFunctionWithBootstrapAndMockTestTool/MyLambda.zip

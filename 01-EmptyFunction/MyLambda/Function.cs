@@ -12,6 +12,10 @@ namespace MyLambda
 {
     public class Function
     {
+        public Function()
+        {
+            System.Console.WriteLine("In constructor");
+        }
         
         /// <summary>
         /// A simple function that takes a string and does a ToUpper
@@ -21,6 +25,7 @@ namespace MyLambda
         /// <returns></returns>
         public string FunctionHandler(string input, ILambdaContext context)
         {
+            System.Console.WriteLine("In handler");
             return input?.ToUpper();
         }
     }
