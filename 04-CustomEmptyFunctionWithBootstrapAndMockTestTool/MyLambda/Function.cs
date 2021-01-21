@@ -14,7 +14,6 @@ namespace MyLambda
     public class Function
     {
         static int _main = 0;
-        static int _ctor = 0;
 
         /// <summary>
         /// The main entry point for the custom runtime.
@@ -33,12 +32,6 @@ namespace MyLambda
             }
         }
 
-        public Function()
-        {
-            System.Console.WriteLine("In constructor");
-            _ctor++;
-        }
-
         /// <summary>
         /// A simple function that takes a string and does a ToUpper
         ///
@@ -52,7 +45,7 @@ namespace MyLambda
         public static string FunctionHandler(string input, ILambdaContext context)
         {
             System.Console.WriteLine("In handler");
-            return $"{_main} {_ctor} {input?.ToUpper()}";
+            return $"{_main} {input?.ToUpper()}";
         }
     }
 }

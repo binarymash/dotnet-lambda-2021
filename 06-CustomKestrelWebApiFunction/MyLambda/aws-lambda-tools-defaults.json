@@ -8,8 +8,10 @@
   "profile": "phil-admin",
   "region": "eu-west-2",
   "configuration": "Release",
-  "package-type": "image",
+  "framework": "net5.0",
+  "function-runtime": "provided",
   "function-memory-size": 256,
   "function-timeout": 30,
-  "image-command": "MyLambda::MyLambda.Function::FunctionHandler",
+  "function-handler": "bootstrap::MyLambda.LambdaEntryPoint::FunctionHandlerAsync",
+  "msbuild-parameters": "--self-contained true"
 }
